@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="shortcut icon" href="logo1.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="img-logo">
+      <img src="logo1.png" alt="Logo">
+    </div>
+  </header>
+  <div class="container">
+    <div class="usuario">
+      <p>Foto de Usuario</p>
+      <div class="user-img">
+      <img src="usuario.png" alt="Foto de Usuario">
+      </div>
+      <p>Usuario: yekaos</p>
+      <button type="button">Editar Foto de Perfil</button>
+      <br>
+      <button type="button">Vista General de la Página</button>
+      <br>
+      <button type="button">Ajustes</button>
+      <p>Patrimono Nacional&copy;</p>
+    </div>
+    <div class="container-qr">
+    <div class="creacion">
+      <div class="img-qr">
+      <img src="qrejemplo.png" alt="Ejemplo de QR">
+    </div>
+      <form id="qr-form">
+        <label for="qr-data">Datos para el código QR:</label>
+        <input type="text" id="qr-data" name="qr-data" required>
+        <br>
+        <label for="qr-size">Tamaño del código QR (en píxeles):</label>
+        <input type="number" id="qr-size" name="qr-size" min="100" max="500" value="200" required>
+        <br>
+        <button type="button" id="generate-qr">Generar QR</button>
+    </form>
+    </div>
+    <div class="edicion">
+      <div class="img-qr">
+      <img src="qrejemplo.png" alt="Ejemplo de QR">
+    </div>
+      <form id="qr-edit-form">
+        <label for="qr-file">Cargar código QR existente (imagen):</label>
+        <input type="file" id="qr-file" name="qr-file" accept="image/*" required>
+        <br>
+        <label for="new-qr-data">Nuevos datos para el código QR:</label>
+        <input type="text" id="new-qr-data" name="new-qr-data" required>
+        <br>
+        <label for="new-qr-size">Nuevo tamaño del código QR (en píxeles):</label>
+        <input type="number" id="new-qr-size" name="new-qr-size" min="100" max="500" required>
+        <br>
+        <button type="button" id="update-qr">Actualizar QR</button>
+    </form>
+    </div>
+    <div class="eliminacion">
+      <div class="img-qr">
+      <img src="qrejemplo.png" alt="Ejemplo de QR">
+    </div>
+      <form id="qr-edit-form">
+        <label for="qr-file">Cargar código QR existente:</label>
+        <input type="file" id="qr-file" name="qr-file" accept="image/*" required>
+        <br>
+        <button type="button" id="update-qr">Eliminar QR</button>
+    </form>
+    </div>
+    <div class="descargar">
+      <div class="img-qr">
+      <img src="qrejemplo.png" alt="Ejemplo de QR"></div>
+      <ul>
+        <p>Para descargar, pinche en el código que necesite:</p>
+        <ul><a href="qrejemplo.png" download>Jardín del Parterre</a></ul>
+        <ul><a href="qrejemplo.png" download>Jardín del Principe</a></ul>
+        <ul><a href="qrejemplo.png" download>Jardín de la Reina</a></ul>
+        <!-- Se podrían agregar más enlaces -->
+    </ul>
+    </div>
+  </div>
+</div>
+<footer><p>Kyllian Arribas Garcia, 2023&copy;</p></footer>
+</body>
+</html>
